@@ -1,0 +1,266 @@
+/*Body*/
+body{
+		/*para colocar una imagen de fondo*/
+	background-image:url("../imagenes/sakura2.jpg");
+		/*para que no se repita la imagen de fondo*/
+	/*background-repeat: no-repeat*/
+		/*para ajustar el tamaño de la imagen*/
+	/*background-size: 100% 100%*/
+		/*color de fondo de la pagina*/
+	/*background-color:#F19EEC;*/
+	/*Font-family es para el tipo de letra: si el lo, no lo 
+	encuentra en el navegador, coloca el segundo, si no el
+	tercero*/
+	font-family: "Codigra", "Courier New", monospace;
+	/*font-size es para el tamaño se expresa en pixeles*/
+	font-size: 60px;
+	/*color es para el color de las letras: puedes colocar
+	valor hexadecimal, el nombre del color o valores rbg*/
+	color: #0E7294;
+}
+hr{
+	/*border es para la linea
+	tamaño en pixeles Tipo de linea y color*/
+	border: 5px solid #21A8D7;
+	/*boder-radius es pata el terminado de las orillas
+	el radio que tendra se expresa en pixeles*/
+	border-radius: 5px;
+	
+}
+
+p{
+	/*text-align se utiliza para alinear el texto
+	por default estan alineados a la izquierda*/
+	text-align:justify;
+	font-size:30px;
+	color: 0F0604;
+	/*background para cambiar el color de fondo del texto*/
+	/*background-color:#D8BCED*/
+	font-family: MINECRAFT PE;
+}
+
+table,tr,td{
+	/*linea grosor y tipo de linea*/
+	border:3px solid;
+	/*color de la linea*/
+	border-color:#3498DB;
+	/*Alineacion del texto*/
+	text-align: center;
+	/*color del fondo*/
+	background-color:#EBA0F7;
+}
+th{
+	background-color:#74C9D8;
+}
+
+ul{
+	/*indica el tipo de viñeta, en este caso
+	un circulo, puede ser tambien un cuadrado*/
+	list-style-type:circle;
+	/*se indica la posicion de la viñeta*/
+	list-style-position: inside;
+}
+
+ol{
+	/*Algunos de los valores de list-style-type son:
+	lower-alpha;-roman; upper-alpha; upper-roman;
+	a,b,c,d,e,f i,ii,iii,iv A,B,C,D,E,F I,II,III,IV*/
+	list-style-type:upper-roman;
+	list-style-position: inside;
+}
+.pie{
+	text-align:center;
+	font-size:8px;
+	color:#1F537A;
+	font-family:  MINECRAFT PE, Biondi;
+	font-weight:bold;
+}
+
+.table{
+	text-align:center;
+	font-size:20px;
+	color:#791A9C;
+	font-family: MINECRAFT PE, Codigra, "Lucida Console";
+}
+.title{
+	text-align:center;
+	font-size:50px;
+	color:#2688A5;
+	font-family: MINECRAFT PE;
+	font-weight:bold;
+}
+
+.imgmarq{
+	width:350px;
+	height:350px;
+	border:5px solid #178BA2;
+	padding:0.8%
+}
+.buttons{
+	width:80px;
+	height:80px;
+	border:5px solid #2688A7;
+}
+
+.imgtable{
+	width:300px;
+	height:300px;
+}
+
+.othersimg{
+	width:400px;
+	height:300px;
+	border:5px solid #178BA2;
+	padding:0.1%;
+}
+
+@font-face{
+	font-family:  MINECRAFT PE;
+	src: url("../fuentes/MINECRAFT PE.ttf");
+	
+}
+@font face{
+	font-family: MINECRAFT PE;
+	src: url("../fuentes/MINECRAFT PE");
+	
+	/*"fontgoogle" sirve para poner tipo de letras sin tener que descargarlas*/
+}
+.fontgoogle{
+font-family: 'Metal Mania', cursive;
+font-size:50px;
+text-align:center;
+}
+/*Uso de Div´s*/
+/*Div o caja para el encabezado*/
+*{
+	margin:0px;
+	padding:0px;
+}
+div#top{
+	width:100%;
+	height:110px;
+	background-image:linear-gradient(#65E1E5,#A67CE3);
+}
+
+div#principal{
+	margin:auto;
+	margin-top:10px;
+	width:90%;
+	/*height:600px;*/
+	background-image:radial-gradient(#81DEE9,#FFEF7C);
+}
+
+div#piep{
+	margin-top:10px;
+	width:100%;
+	height:100px;
+	background-image:linear-gradient(#65E1E5,#A67CE3);
+}
+.caja{
+	height:300px;
+	width:200px;
+	background:#81DEE9;
+	border:1px solid #81DEE9;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px #BE81E9;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:2px;
+	font-size:20px;
+	color:#8B60EE;
+	font-weight:bold;
+}
+.text-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.carrousel{
+	width:1000px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.conteCarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemCarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemCarrouselTarjeta{
+	width:30px;
+	height:30px;
+	box-sizing:border-box;
+}
+.itemCarrouselArrows{
+	Position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemCarrouselArrows>i:hover{
+	cursor:pointer;
+}
+.conterCarrouselControler{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.conterCarrouselControler>a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemCarrouselArrow>a>i{
+	color:white;
+	
+}
+.classPrincipal{
+	margin:auto;
+	margin-top:10px;
+	width:90%;
+	height:600px;
+	background-image:radial-gradient(#81DEE9,#FFEF7C);
+}
+
+.menu{
+	height:85px;
+	width:85px;
+	background:#81DEE9;
+	border:1px solid #81DEE9;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.menu:hover{
+	box-shadow:0 0 10px #BE81E9;
+	transform:scale(1.3);
+}
+
+
+
+
+
+
+
+
